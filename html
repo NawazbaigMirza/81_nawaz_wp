@@ -1,0 +1,231 @@
+# 81_nawaz_wp
+TPO
+web programing
+****HTML****
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traning Placement Office</title>
+	<style>
+		fieldset {
+    		display: block;
+			width: 50%;
+			text-align:center;
+			margin-left: 25%;
+    		margin-right: 25%;
+				}
+		button:hover {
+			 background-color:#1E90FF;
+				}
+	</style>
+
+	<style>
+		input,select,button{
+			padding: 5px 8px;
+			margin: 4px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+	
+		input[type=text,email,password,date]{
+			width:80%;
+		}
+
+		input[type=submit] {
+			background-color: #1E90FF;
+			color: white;
+			padding: 5px 8px;
+			margin: 4px 0;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color:#45a049;
+		}
+
+	</style>
+
+	<style>
+		legend{
+			color:#1E90FF;
+		}
+		th{
+		text-align:right;
+		}
+
+		td{
+		text-align:left;
+		}
+
+		ul#m01 {
+			list-style-type: none;
+			margin: 1;
+			padding: 1;
+			overflow: hidden;
+			background-color:#1E90FF;
+		}
+
+		li#m01 {
+			float:left;
+		}
+
+		li#m01 a {
+			display: block ;
+			color: white;
+			text-align: right;
+			padding: 10px;
+			text-decoration:none;
+		}
+
+		li#m01 a:hover {
+			background-color: #191970;
+			text-decoration:underline;
+		}
+
+		li#m01 a.active {
+			background-color:blue;
+		}
+	</style>
+
+
+	
+
+ <script src="myvalidate.js"></script> 
+
+</head>
+<body>
+<center style="background-color:#87CEEB;">
+
+<table>
+<tr>
+<td><img src="DBIT_logo.png" alt="DBIT_logo" style="width: 75px;height: 75px;"></td>
+<td><font size="6">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+	<center><font size="4">Education Society India</font></center></td>
+<td><img src="DBIT_logo.png" alt="DBIT_logo" style="width: 75px;height: 75px;"></td>
+</tr>
+</table>
+
+</center>
+<hr>
+<center><h2>Traning Placement Office</h2></center>
+
+<div class="container">
+  <ul class="nav nav-tabs nav-justified">
+     </ul>
+  <br>
+  <ul class="nav nav-pills nav-justified">
+    <ul id="m01">
+      <li id="m01"><a href="#home">Home</a></li>
+    <li id="m01"><a href="View.html">View</a></li>
+    <li id="m01"><a href="Notification.html">Notification</a></li>
+     <li id="m01"><a href="#contact">Contact Us</a></li>
+  </ul>
+</div>
+
+<form name="tpoform">
+	<fieldset>
+		<legend>Personal Information</legend>
+		
+		<table align="center">
+			<tr>
+				<th>Name</td>
+				<td>:</td>
+				<td><input type="text" name="fname" onkeyup="limit(this,5);" onkeydown="limit(this)" ></td>
+			</tr>
+			
+			<tr>
+				<th>Middle name</th>
+				<td>:</td>
+				<td><input type="text" name="mname" ></td>
+			</tr>
+		
+			<tr>
+				<th>Last Name</th>
+				<td>:</td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<th>Date Of Birth</th>
+				<td>:</td>
+				<td><input type="Date" name="dob" ></td>
+			</tr>
+			<tr>
+				<th>Department</th>
+				<td>:</td>
+				<td><select name="dept" style="max-width:80%;"required>
+						<option value="no" selected="">--Select Department--</option>
+						<option value="IT" >Information Technology</option>
+						<option value="COMPS">Computer Engineering</option>
+						<option value="EXTC">Electronics and Telecommunications</option>
+						<option value="MECH">Mechanical Engineering</option>
+					</select></td>
+			</tr>
+			<tr>
+				<th>Student ID</th>
+				<td>:</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+
+			<tr>
+			<th>Industry Name</td>
+				<td>:</td>
+				<td><input type="text" name="iname" onkeyup="limit(this,5);" onkeydown="limit(this)" ></td>
+			</tr>
+			<tr><th>Designation</td>
+				<td>:</td>
+				<td><input type="text" name="des" onkeyup="limit(this,5);" onkeydown="limit(this)" ></td>
+			</tr>
+			<tr>
+				<th>Package</th>
+				<td>:</td>
+				<td>&#8377;<input type="text" name="amt" value="200" disabled></td>
+			</tr>
+			
+			<tr>
+				<th>Gender</th>
+				<td>:</td>
+				<td><input type="radio" name="gen" value="male" checked>Male<input type="radio" name="gen" value="female" checked >Female<td>
+			</tr>
+			<tr>
+				<th>Date Of Placement</th>
+				<td>:</td>
+				<td><input type="Date" name="dop" ></td>
+			</tr>
+
+			<tr>		
+				<th>Contact</th>
+				<td>:</td>
+				<td><input type="text" id="contact" name="num" onkeyup="limit(this,10);"></td>
+			</tr>
+
+			<tr>
+				<th>Email</th>
+				<td>:</td>.
+				<td><input type="email" name="em"></td>
+			</tr>
+
+			<tr>
+				<th>Address</th>
+				<td>:</td>
+				<td><textarea name="addr" rows="3" cols="32"></textarea></td>
+			</tr>
+
+			<tr>
+				<th>City</th>
+				<td>:</td>
+				<td><input type="text" name="ct"></td>
+			</tr>
+		</table>
+	</fieldset>
+<center>
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<br>
+<button type="submit" value="Submit"  onclick="myFunction()">Submit</button> 
+<button type="reset" value="Reset">Reset</button><br></center>
+</form>
+</body>
+</html>
